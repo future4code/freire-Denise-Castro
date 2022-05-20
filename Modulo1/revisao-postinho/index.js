@@ -88,7 +88,6 @@ console.log(login());
 const primeiraDose = () => {
     //  Sua lógica aqui
 let nomeDoUsuario2 = prompt("Digite seu nome: ")
-let vacinaTomada = 
 
 
 }
