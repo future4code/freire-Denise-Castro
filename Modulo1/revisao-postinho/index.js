@@ -30,17 +30,17 @@ console.log(verificaSeEMaior(321, 2156));
 // Exercício 2------------------------------------------------------------------------------------
 //Escreva true or false para as comparações abaixo:
 // exemplo 1>2 = false
-// a-) 1==='1'=
-// b-) 1=='1'=
-// c-) 'a'==='b'=
-// d-) 'b'>'a'=
-// e-) 0!==null=
+// a-) 1==='1'= false
+// b-) 1=='1'= true
+// c-) 'a'==='b'= false
+// d-) 'b'>'a'= true
+// e-) 0!==null= true
 
 
 // CONDICIONAIS
 
 // Exercício 3------------------------------------------------------------------------------------
-/*
+
 const cadastro = () => {
 
     let usuario = []
@@ -66,10 +66,10 @@ const cadastro = () => {
 
 }
 console.log(cadastro());
-*/
+
 // Exercício 4-----------------------------------------------------------------------------------------------
 
-/*const login = () => {
+const login = () => {
     const login = "labenu"
     //  Sua lógica aqui
     let senhaDoUsuario = prompt("Digite sua senha:")
@@ -114,29 +114,11 @@ Compareça no posto na data ${data}.`
 }
 console.log(primeiraDose())
 
-*/
+
 // LOOP+CONDICIONAL
 
 // Exercício 6 -------------------------------------------------------------------------------------
-/*- Exercício 6 - Loop+Condicional -**Segunda dose**
-    
-    Escreva uma função para validar a segunda dose de um usuário, que receba o nomeDoUsuário
-     e mude o valor da propriedade `imunização` para **“completa”** para isso vamos te fornecer
-      uma lista de usuários.
-    
-    ```jsx
-    const usuarios = [
-           { nome: "Artur", imunizacao: "incompleta" },
-           { nome: "Barbara", imunizacao: "incompleta" },
-           { nome: "Carlos", imunizacao: "incompleta" }
-    ]
-    ```
-    
-    💡Dica:  para acessar os valores guardados em cada propriedade de um objeto use a notação do ponto chamando pelo nome da propriedade.
-     **Ex:**  
-    
-    - objeto.nome // "Bárbara"
-    - objeto.imunizacao // "incompleta"*/
+
 
 const segundaDose = (nomeDoUsuario) => {
     const usuarios = [
@@ -145,25 +127,18 @@ const segundaDose = (nomeDoUsuario) => {
         { nome: "Carlos", imunizacao: "incompleta" }
     ]
     //  Sua lógica aqui
-
+    for (let index = 0; index < usuarios.length; index++) {
+        if(usuarios[index]["imunizacao"] == "incompleta"){
+            return (usuarios[index]["imunizacao"] = "completa")
+        }
+    }
 
 
 }
 
-
 console.log(segundaDose("Barbara"));
 
 // Exercício 7 --------------------------------------------------------------------------------------
-
-/*
-- Exercício 7 -  Loop+Condicional - **Aviso aos atrasados**
-    
-    As pessoas que tomaram a primeira dose da vacina, não voltaram no postinho para a segunda
-     dose e temos que enviar uma mensagem para elas no app.
-    Escreva uma função que **leia a lista de usuários** e **verifique** se a imunização 
-    está completa ou não e caso não esteja completa,  **imprima no console** 
-    uma mensagem avisando que ele deve voltar ao posto para tomar a segunda dose.
-*/
 
 const avisoAosAtrasados = () => {
     const usuarios = [
@@ -172,23 +147,17 @@ const avisoAosAtrasados = () => {
         { nome: "Carlos", imunizacao: "incompleta" }
     ]
     for (let index = 0; index < usuarios.length; index++) {
-        const element = usuarios[index];
-        
-    }
-        if (usuarios[index]["imunizacao"]== "incompleto"){
-        console.log (`Olá, ${nome}, sua imunização está ${imunizacao}, favor, comparecer ao posto`)
+        if(usuarios[index]["imunizacao"] == "incompleta"){
+            console.log (`Olá, ${usuarios[index]["nome"]}, sua imunização está ${usuarios[index]["imunizacao"]}, favor, comparecer ao posto`)
+
         }
     }
-    
 
+
+    }
+    
 avisoAosAtrasados()
 
-
-// DESAFIO------------------------------------------------------------------------------------------
-/*Modifique as funções dos exercícios 3 a 7 para que salvem as informações coletadas 
-em um único objeto “usuários” e usem este objeto para exibir as mensagens e fazer as validações pedidas .
-
-Para isso será usado o array de objetos - usuarios abaixo:*/
 
 const usuarios = [
     {
@@ -223,40 +192,25 @@ const cadastroDesafio = () => {
 }
 
 
-/*No desafio, ao invés de cadastrar o usuário enviando para o array, você vai adicionar 
-as informações recebidas pelo prompt a um objeto e então adicioná-lo ao array usuarios.
-console.log(cadastroDesafio());*/
-
 const loginDesafio = () => {
     //  Sua lógica aqui
 }
 console.log(loginDesafio());
 
-/*Neste exercício você deve adicionar ao usuário cadastrado
- da lista usuarios as informações vacina e imunização. 
- O parâmetro imunização deve receber um valor padrão "incompleta" 
- além de devolver a mensagem anteriormente programada. */
  
 const primeiraDoseDesafio = () => {
 //  Sua lógica aqui
 }
 console.log(primeiraDoseDesafio())
 
-/*Neste exercício você deve receber um nome de usuário por parâmetro, verificar se este
- nome existe na lista usuarios e  caso exista mudar o valor do parâmetro imunização para "completa"*/
+
 
 const segundaDoseDesafio = (nomeDoUsuario) => {
     //  Sua lógica aqui
 }
 console.log(segundaDoseDesafio("ALGUM NOME AQUI"));
 
-/*_________________________________________________________________
 
-Reformule a função para que ela **retorne** a mesma mensagem ao final,
- adicionando qual das vacinas o usuário deve fazer o reforço.
-
-Imprima a mensagem no console.
-*/
 
 const avisoAosAtrasadosDesafio = () => {
     //  Sua lógica aqui
