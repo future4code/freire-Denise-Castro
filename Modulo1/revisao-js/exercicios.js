@@ -20,23 +20,30 @@ function retornaArrayOrdenado(array) {
 
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
-  let numerosPares = [array];
-    for (let i = 0; numerosPares.length < array; i += 2) {
-        numerosPares.push(i);
+  let arrayNumerosPares = []
+  for (let i =0; i < array.length; i++){
+    if (array[i] % 2 === 0) {
+      arrayNumerosPares.push(array[i])
     }
-    return numerosPares;
+  }
+  return arrayNumerosPares
 }
-
-retornaNumerosPares(numerosPares)
+retornaNumerosPares()
 
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
- 
+  let arrayNumerosPares = []
+  for (let i =0; i < array.length; i++){
+    if (array[i] % 2 === 0) {
+      arrayNumerosPares.push(array[i])
+    }
+  }
 }
+retornaNumerosParesElevadosADois()
 
 // EXERCÍCIO 06
 function retornaMaiorNumero(array) {
-  
+  return Math.max.apply(null, array);
 }
 
 // EXERCÍCIO 07
@@ -81,7 +88,13 @@ function retornaPessoasNaoAutorizadas(pessoas) {
 
 // EXERCÍCIO 14
 function retornaContasComSaldoAtualizado(contas) {
-
+  return contas.map ((cliente)=>{
+    cliente.compras.map ((compra)=>{
+      clientes.saldoTotal = cliente.saldoTotal - compra
+    })
+    cliente.compras = []
+    return cliente
+  })
 }
 
 // EXERCÍCIO 15A
