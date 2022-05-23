@@ -153,9 +153,7 @@ const avisoAosAtrasados = () => {
         }
     }
 
-
     }
-    
 avisoAosAtrasados()
 
 
