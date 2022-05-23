@@ -20,8 +20,14 @@ function retornaArrayOrdenado(array) {
 
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
-  
+  let numerosPares = [array];
+    for (let i = 0; numerosPares.length < array; i += 2) {
+        numerosPares.push(i);
+    }
+    return numerosPares;
 }
+
+retornaNumerosPares(numerosPares)
 
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
