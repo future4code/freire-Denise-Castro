@@ -4,7 +4,7 @@ function App() {
 const tituloNovo = "Titulo do vídeo"
 
 function reproduzVideo() {
-    alert("O vídeo está sendo reproduzido")
+    alert("Seu vídeo está sendo reproduzido")
 }
   return (
     <div>
