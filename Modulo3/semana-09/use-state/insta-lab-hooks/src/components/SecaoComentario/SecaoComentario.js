@@ -9,7 +9,7 @@ const CommentContainer = styled.div`
 
 const InputComment = styled.input `
     width: 100%;
-    margin-right: 5px;
+    margin-right: 15px;
 `
 
 const SecaoComentario = (props) => {
