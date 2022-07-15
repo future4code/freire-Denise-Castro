@@ -1,13 +1,26 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import { goBack, goToPage } from "../../Routes/Coordinator";
+import { applicationPage } from "../../constants/Constants";
 
 
-export default function ListTripsPage () {
 
-    return (
-        <div>
-        <h1>List Trips Page</h1>
+function ListTripsPage (){
 
-        </div>
+    const navigate = useNavigate()
+
+    return(
+        <>
+            <h1>Pag Lista de Viagens</h1>
+                <button
+                onClick={()=>goBack(navigate)}>Voltar
+                </button>
+
+                <button
+                 onClick={()=>goToPage(navigate,{applicationPage})}>Inscrever-se
+                </button>
+        </>
     )
-
 }
+
+export default ListTripsPage
