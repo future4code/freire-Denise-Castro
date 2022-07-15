@@ -1,11 +1,11 @@
 import React from "react";
 
 
-export const ApplicationsForm = () => {
+export default function ApplicationsFormPage () {
 
     return (
         <div>
-        <h1>Home Page</h1>
+        <h1>Applications Form Page</h1>
 
         </div>
     )

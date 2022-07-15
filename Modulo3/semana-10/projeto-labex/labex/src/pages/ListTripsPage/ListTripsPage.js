@@ -1,11 +1,11 @@
 import React from "react";
 
 
-export const ListTripPage = () => {
+export default function ListTripsPage () {
 
     return (
         <div>
-        <h1>Home Page</h1>
+        <h1>List Trips Page</h1>
 
         </div>
     )

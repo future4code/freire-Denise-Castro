@@ -1,11 +1,11 @@
 import React from "react";
 
 
-export const TripeDetailsPage = () => {
+export default function TripDetailsPage () {
 
     return (
         <div>
-        <h1>Home Page</h1>
+        <h1>Trip Details Page</h1>
 
         </div>
     )
