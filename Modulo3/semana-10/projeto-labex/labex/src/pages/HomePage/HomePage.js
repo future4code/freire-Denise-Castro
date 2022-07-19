@@ -1,23 +1,16 @@
 import React from "react";
-import {useNavigate} from "react-router-dom"
-import { goToPage } from "../../Routes/Coordinator";
-import { listTrips, loginPage } from "../../constants/Constants";
+import HeaderPublic from "../../components/headerPublic/HeaderPublic";
+import MainHome from "../../components/MainHome/MainHome";
+import Footer from "../../components/footer/Footer";
 
 
-export default function HomePage () {
-    const navigate = useNavigate()
+export function HomePage() {
 
     return(
-        <>
-            <h1>ASTRODEV</h1>
-            <button
-                onClick={()=>goToPage(navigate,listTrips)}>Lista De Viagens
-            </button>
-            
-            <button
-                 onClick={()=> goToPage(navigate,loginPage)}>Login
-            </button>
-        </>
+        <div>
+            <HeaderPublic />
+            <MainHome />
+            <Footer />
+        </div>
     )
 }
-

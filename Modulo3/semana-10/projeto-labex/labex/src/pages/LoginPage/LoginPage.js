@@ -1,25 +1,60 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { goBack, goToPage } from "../../Routes/Coordinator";
-import { adminHomePage } from "../../constants/Constants";
+import { BASE_URL } from "../../constants/API";
+import axios from "axios"
+import { useForm } from "../../hooks/useForrm";
+import HeaderPublic from "../../components/headerPublic/HeaderPublic";
 
 
+export function LoginPage() {
 
-export default function LoginPage () {
     const navigate = useNavigate()
 
+    const { form, onChange } = useForm({email:"", password:""})
+
+    const onSubmitLogin = (event) => {
+        event.preventDefault()
+         
+        axios.post(`${BASE_URL}/login`, form)
+        .then((res) => {
+            localStorage.setItem('token', res.data.token)
+            alert("Autenticações autorizadas!")
+            navigate("admin-page", {replace:true})
+        })
+        .catch((err) => {
+            console.log('não autorizado: ', err.response)
+            alert("Autenticações não autorizadas.")
+        })
+    }
+
     return(
-        <>
-            <h1>Pag de Login</h1>
-                <button
-                onClick={()=>goBack(navigate)}>Voltar
-                </button>
+        <div>
+            <HeaderPublic />
 
-                <button
-                onClick={()=>goToPage(navigate, adminHomePage)}>Logar
-                </button>
+            <h2> Login Page </h2>
 
-        </>
+            <br/>
+
+            <form onSubmit={onSubmitLogin}>
+                <input 
+                    name={'email'}
+                    placeholder="email"
+                    type="email"
+                    value={form.email}
+                    onChange={onChange}
+                    required
+                />
+                <input 
+                    name={'password'}
+                    placeholder="password"
+                    type="password"
+                    value={form.password}
+                    onChange={onChange}
+                    required
+                />
+
+                <button> Conectar </button>
+            </form>
+        </div>
     )
-
 }

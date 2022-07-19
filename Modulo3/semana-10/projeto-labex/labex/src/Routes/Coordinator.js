@@ -13,3 +13,4 @@ export const goBack = (navigate) => {
 export const goToAdminHomePage = (navigate) => {
     navigate("../admin/trips/list")
 }
+
