@@ -1,8 +1,14 @@
 import styled from "styled-components";
 
-export const HomeContainer = styled.div`
-display: grid; 
-height: 100vh;
-background-color: #000;
-font-family: 'Courier New', Courier, monospace;
-`
+export const MainHomeDiv = styled.div`
+    height: 75vh;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(${props => props.Img}) no-repeat top;
+    background-size: 40% 70%;
+    @media (max-width: 800px)  {
+		background-size: 80% 60%;
+    }

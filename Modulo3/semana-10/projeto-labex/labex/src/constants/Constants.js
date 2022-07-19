@@ -1,3 +1,6 @@
 export const listTrips = "list-page"
 export const loginPage = "login-page"
 export const applicationPage = "applications-page"
+export const adminHomePage = "admin-page"
+export const createTripPage = "create-page"
+export const tripeDetailsPage = "details-page"

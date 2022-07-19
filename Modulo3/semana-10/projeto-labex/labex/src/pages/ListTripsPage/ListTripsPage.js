@@ -17,7 +17,7 @@ function ListTripsPage (){
                 </button>
 
                 <button
-                 onClick={()=>goToPage(navigate,{applicationPage})}>Inscrever-se
+                 onClick={()=>goToPage(navigate,applicationPage)}>Viagem para a Lua
                 </button>
         </>
     )

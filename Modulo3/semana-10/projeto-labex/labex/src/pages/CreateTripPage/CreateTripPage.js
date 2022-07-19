@@ -1,12 +1,16 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import { goBack } from "../../Routes/Coordinator";
+
 
 export default function CreateTripPage () {
+    const navigate = useNavigate ()
 
     return (
-        <div>
+        <>
         <h1>Create Trip Page</h1>
-
-        </div>
+        <button onClick={()=>goBack(navigate)}>Voltar</button>
+        </>
     )
 
 }
