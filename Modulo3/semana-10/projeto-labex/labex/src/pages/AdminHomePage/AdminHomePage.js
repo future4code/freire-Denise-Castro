@@ -3,6 +3,9 @@ import { useNavigate } from "react-router-dom";
 import { createTripPage } from "../../constants/Constants";
 import { goBack, goToPage} from "../../Routes/Coordinator";
 import { tripeDetailsPage } from "../../constants/Constants";
+import HeaderPublic from "../../components/headerPublic/HeaderPublic";
+import { MainAdminHome } from "../../components/adm/MainAdminHome";
+import Footer from "../../components/footer/Footer";
 
 
 
@@ -12,18 +15,11 @@ export default function AdminHomePage () {
 
     return (
         <>
-        <h1>Admin Home Page</h1>
-        <button
-                onClick={()=>goBack(navigate)}>Voltar
-        </button>
+        <HeaderPublic/>
 
-        <button
-                onClick={()=>goToPage(navigate, createTripPage)}>criar viagem
-        </button>
+        <MainAdminHome/>
 
-        <button
-                onClick={()=>goToPage(navigate, tripeDetailsPage)}>viagem para a lua
-        </button>
+        <Footer/>
 
         </>
     )

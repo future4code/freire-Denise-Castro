@@ -3,32 +3,28 @@ import styled from "styled-components";
 export const MainHomeDiv = styled.div`
     height: 75vh;
     width: 100%;
-    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(${props => props.Img}) no-repeat top;
-    background-size: 40% 70%;
-    @media (max-width: 800px)  {
-		background-size: 80% 60%;
-    }
+    background-size: 100% 100%;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #001f36;
+
     button {
+        font-family: 'Courier New', Courier, monospace;
         margin: 8em 1em 1em 1em;
         padding: 5px;
         border: none;
         border-radius: 100px;
-        background-color: #fc9120;
+        background-color: #baab6a;
         color: white;
-        height: 20%;
-        width: 15%;
-        font-size: 2em;
+        height: 15%;
+        width: 10%;
+        font-size: 1em;
         cursor: pointer;
         :hover{
-            background-color: #d97d1c
+            background-color: #fbea80
         }
-        @media (max-width: 800px)  {
-		    width: 50%;
-            margin: 6em 1em 1em 1em;
-        }
+       
     }
 `

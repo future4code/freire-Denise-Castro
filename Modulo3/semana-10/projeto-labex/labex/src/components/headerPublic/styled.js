@@ -1,25 +1,30 @@
 import styled from "styled-components";
 
 export const HeaderDiv = styled.div`
-    height: 10vh;
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    height: 11vh;
     width: 100%;
-    background-color: #fc9120;
     color: white;
     display: flex;
     justify-content: space-between;
+    background-color: #204b5e;
     align-items: center;
     h1 {
         margin-left: 10px;
-    }
+        font-family: 'Press Start 2P', cursive;    }
     button {
+        font-family: 'Courier New', Courier, monospace;
+        top: 0;
+        margin: 0;
         margin-right: 10px;
         padding: 5px;
-        background-color: white;
-        color: orange;
-        font-size: 1.2em;
+        color: #fbea80;
+        background-color: #ffffff01;
+        border: none;
+        font-size: 20px;
         cursor: pointer;
         :hover{
-            text-decoration: underline;
+            color: white;
         }
     }
 `
