@@ -6,7 +6,7 @@ import { useGetRequestData } from "../../hooks/useGetRequestData";
 import { goToTripDetailsPage, goToCreateTripPage } from "../../Routes/Coordinator";
 import { useNavigate } from "react-router-dom";
 import {MainDiv, TripDiv} from "./style"
-import { goBack, goToPage } from "../../Routes/Coordinator";
+import { goBack} from "../../Routes/Coordinator";
 import { createTripPage } from "../../constants/Constants";
 
 
@@ -57,7 +57,7 @@ return(
         </button>
 
         <button className="criar"
-                onClick={()=>goToPage(navigate, createTripPage)}>criar viagem
+                onClick={()=>goToCreateTripPage(navigate, createTripPage)}>criar viagem
         </button>
 
     </MainDiv>

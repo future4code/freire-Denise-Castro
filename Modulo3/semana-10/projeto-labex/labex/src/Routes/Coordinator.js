@@ -11,7 +11,7 @@ export const goBack = (navigate) => {
 }
 
 export const goToAdminHomePage = (navigate) => {
-    navigate("../admin/trips/list")
+    navigate("/login-page/admin-page")
 }
 
 export const goToTripDetailsPage = (navigate, id) => {
@@ -20,4 +20,17 @@ export const goToTripDetailsPage = (navigate, id) => {
 
 export const goToCreateTripPage = (navigate) => {
     navigate("/admin/trips/create")
+}
+
+export const goBackAdminHomePage = (navigate) => {
+    navigate(-1)
+}
+
+export const goToLogout = (navigate) => {
+    window.localStorage.clear('token') 
+    navigate("/login-page")
+}
+
+export const goToLoginPage = (navigate) => {
+    navigate("/login-page")
 }

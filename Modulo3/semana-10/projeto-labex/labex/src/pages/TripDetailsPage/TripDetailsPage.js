@@ -1,18 +1,17 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
-import { goBack } from "../../Routes/Coordinator";
+import { Details } from "../../components/details/Details";
+import Footer from "../../components/footer/Footer";
+import HeaderAdm from "../../components/headerAdmin/HeaderAdmin";
 
 
 
-export default function TripDetailsPage () {
 
-    const navigate = useNavigate ()
+export function TripDetailsPage () {
     return (
         <>
-        <h1>Trip Details Page</h1>
-        <button onClick={()=>goBack(navigate)}>Voltar
-        </button>
-
+        <HeaderAdm/>
+        <Details/>
+        <Footer/>
         </>
     )
 

@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom"
 import { listTrips, loginPage } from "../../constants/Constants"
 import { MainHomeDiv } from "./styled"
 import {goToPage} from "../../Routes/Coordinator"
+import Logo from "./logo.png";
 
 
 export default function MainHome() {
@@ -10,7 +11,8 @@ export default function MainHome() {
 
     return(
         <MainHomeDiv>
-            <button onClick={()=>goToPage(navigate,listTrips)}>Lista De Viagens</button>
+            <img className="logo" src={Logo}/>
+            <button onClick={()=>goToPage(navigate,listTrips)}>Lista de Viagens</button>
             <button onClick={()=> goToPage(navigate,loginPage)}>Login</button>
         </MainHomeDiv> 
 

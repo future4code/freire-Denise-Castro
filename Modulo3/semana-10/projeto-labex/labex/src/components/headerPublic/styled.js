@@ -12,8 +12,12 @@ export const HeaderDiv = styled.div`
     h1 {
         margin-left: 10px;
         font-family: 'Press Start 2P', cursive;    }
+    .Imhome3 {
+        font-size: 25px;
+
+    }
     button {
-        font-family: 'Courier New', Courier, monospace;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         top: 0;
         margin: 0;
         margin-right: 10px;
@@ -21,7 +25,7 @@ export const HeaderDiv = styled.div`
         color: #fbea80;
         background-color: #ffffff01;
         border: none;
-        font-size: 20px;
+        font-size: 15px;
         cursor: pointer;
         :hover{
             color: white;

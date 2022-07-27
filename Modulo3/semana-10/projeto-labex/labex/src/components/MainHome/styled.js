@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const MainHomeDiv = styled.div`
-    height: 75vh;
+    height: 80vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -11,13 +11,13 @@ export const MainHomeDiv = styled.div`
     background-color: #001f36;
 
     button {
-        font-family: 'Courier New', Courier, monospace;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         margin: 8em 1em 1em 1em;
         padding: 5px;
         border: none;
         border-radius: 100px;
         background-color: #baab6a;
-        color: white;
+        color: black;
         height: 15%;
         width: 10%;
         font-size: 1em;
@@ -26,5 +26,9 @@ export const MainHomeDiv = styled.div`
             background-color: #fbea80
         }
        
+    }
+
+    .logo{
+        width: 300px;
     }
 `

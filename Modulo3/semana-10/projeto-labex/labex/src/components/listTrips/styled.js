@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const TripDiv = styled.div`
     margin: 5px;
     border: 2px solid black;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color:#ffffff10;;
     width: 100%;
     max-width: 600px;

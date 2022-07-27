@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const FooterDiv = styled.div`
+    flex-shrink:0;
     height: 15vh;
     width: 100%;
     background-color: #000000;
@@ -18,6 +19,7 @@ export const FooterDiv = styled.div`
     h4 {
         align-self: flex-end;
         margin: 0 0 10px 80px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
        
         
     }
