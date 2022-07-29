@@ -11,10 +11,14 @@ const Router = () => {
         <BrowserRouter>
             <Routes>
                 <Route index element = {<LoginPage/>}/>
-                <Route path = "/signup" element = {<SignUp/>}/>
-                <Route path = "/feed" element = {<FeedPage/>} />
-                <Route path = "/feed/:id" element = {<PostPage/>} />
-                <Route path = '*' element = {<ErrorPage/>} /> 
+                <Route path = "/signup" element = 
+                {<SignUp/>}/>
+                <Route path = "/feed" element = 
+                {<FeedPage/>} />
+                <Route path = "/feed/:id" element = 
+                {<PostPage/>} />
+                <Route path = '*' element =
+                 {<ErrorPage/>} /> 
             </Routes>
         </BrowserRouter>
     )
