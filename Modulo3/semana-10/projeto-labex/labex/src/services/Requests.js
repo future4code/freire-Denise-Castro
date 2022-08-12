@@ -9,11 +9,8 @@ toast.configure()
 
 
 const BASE_URL = 'https://us-central1-labenu-apis.cloudfunctions.net/labeX/denise-castro-freire'
-// const TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IlJWUjdDcG0zMUNHamtSY1ZESlJtIiwiZW1haWwiOiJkZW5pc2VkZXZAZ21haWwuY29tLmJyIiwiaWF0IjoxNjU4MTk4Mzc5fQ.4n6PcIoIGXoNt6Hq6MTNCQfsfQF6k1X1SLNYpcyNX-Y"
-  //martin@labenu.com
-  //12345
 
-//{
+
 //    "success": true,
 //    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IlJWUjdDcG0zMUNHamtSY1ZESlJtIiwiZW1haWwiOiJkZW5pc2VkZXZAZ21haWwuY29tLmJyIiwiaWF0IjoxNjU4MTk4Mzc5fQ.4n6PcIoIGXoNt6Hq6MTNCQfsfQF6k1X1SLNYpcyNX-Y",
 //    "user": {
