@@ -13,8 +13,17 @@ app.get("/ping", (req:Request, res:Response) => {
     res.send("Pong")
 })
 
+/* Exercício 02 
+Acesse a API do JSONPlaceholder e observe os endpoints que buscam afazeres (”to dos”). Crie uma variável de tipo para representar cada afazer.
+*/ 
 
-
+let jsonParser = bodyParser.json();
+type Afazeres = {
+    userId: number, 
+    id: number, 
+    title: string, 
+    completed: boolean
+}
 
 app.use(express.json());
 
