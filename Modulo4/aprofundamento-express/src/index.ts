@@ -65,7 +65,28 @@ type Afazeres = {
     
     Construa um endpoint que retorne todos os afazeres do exercício anterior de acordo com um único status, ou seja, retorne ou afazeres concluídos ou somente os que ainda estão em andamento.*/
 
+app.get("/todos", (req:Request, res:Response) => {
+
+    if (req.query.completed === undefined || (req.query.completed !== "true" && req.query.completed !== "false")) 
+    {
+        res.status(200).send(meusAfazeres)
+    }
+
+    else {
+        let sortCompleted = req.query.completed === "true"  
+
+        let afazeresFiltrados:(Afazeres|undefined)[] = meusAfazeres.map( (todo) => {
+            return todo
+        }).filter( (todo) => {
+            return todo.completed === sortCompleted 
+        })
     
+        res.status(200).send(afazeresFiltrados)
+    }
+
+    
+})
+
 
 app.use(express.json());
 
