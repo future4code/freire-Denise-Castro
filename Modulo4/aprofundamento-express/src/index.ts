@@ -25,6 +25,48 @@ type Afazeres = {
     completed: boolean
 }
 
+/*- Exercício 3
+    
+    Crie um array de afazeres para servir como base de dados da nossa API e utilize a tipagem desenvolvida no exercício anterior.*/
+
+    let meusAfazeres:Afazeres[] = [
+    {
+        "userId": 1,
+        "id": 1,
+        "title": "delectus aut autem",
+        "completed": false
+      },
+      {
+        "userId": 1,
+        "id": 2,
+        "title": "quis ut nam facilis et officia qui",
+        "completed": false
+      },
+      {
+        "userId": 1,
+        "id": 3,
+        "title": "fugiat veniam minus",
+        "completed": false
+      },
+      {
+        "userId": 1,
+        "id": 4,
+        "title": "et porro tempora",
+        "completed": true
+      },
+      {
+        "userId": 1,
+        "id": 5,
+        "title": "laboriosam mollitia et enim quasi adipisci quia provident illum",
+        "completed": false
+      }
+    ]
+/*Exercício 4
+    
+    Construa um endpoint que retorne todos os afazeres do exercício anterior de acordo com um único status, ou seja, retorne ou afazeres concluídos ou somente os que ainda estão em andamento.*/
+
+    
+
 app.use(express.json());
 
 const server = app.listen(process.env.PORT || 3003, () => {
