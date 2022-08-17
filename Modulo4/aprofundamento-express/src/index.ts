@@ -86,8 +86,49 @@ app.get("/todos", (req:Request, res:Response) => {
 
     
 })
+/*exercicio 5
+Construa um endpoint de criação de afazer. A resposta deve retornar o array de afazeres atualizado.*/
+app.post('/criarAfazer', (req, res) => {
+    const { userId, id, title, completed }: Afazeres = req.body;
+    meusAfazeres.push({ userId, id, title, completed })
+    res.send(meusAfazeres)
+})
 
+/*exercicio 6 
+Construa um endpoint de edição do status de um afazer, ou seja, de completo para incompleto e vice-versa.*/
 
+app.put('/editAfazer/:id', (req, res) => {
+    const idAfazer = Number(req.params.id)
+    const { completed } = req.body
+    const tarefas: any = meusAfazeres.find((item) => item.id == idAfazer)
+    tarefas.completed = completed
+    res.send(tarefas)
+})
+/*exercicio 7 
+Construa um endpoint que deleta um determinado afazer de acordo com sua id.*/
+
+app.delete('/deleteAfazer/:id', (req, res) => {
+    const idAfazer = Number(req.params.id)
+
+    const indexArray = meusAfazeres.findIndex((afazer) => {
+        afazer.id == idAfazer
+    })
+    if (indexArray === -1)
+    return res.status(404).json({ error: "não enconstrado" })
+    meusAfazeres.splice(indexArray, 1)
+    return res.status(200).json({ sucess: "Excluido!" })
+})
+
+/*/exercicio 8 
+Construa um endpoint que retorne todos os afazeres de uma determinada id de usuário.*/
+app.get('/pegartarefas/:id',(req,res)=>{
+const idAfazer = Number(req.params.id)
+const findTarefas = meusAfazeres.filter((arr)=>{
+    return arr.userId == idAfazer
+});
+res.status(200).send(findTarefas)
+})
+/*----------------------------------------------------------------------*/
 app.use(express.json());
 
 const server = app.listen(process.env.PORT || 3003, () => {
