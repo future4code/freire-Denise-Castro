@@ -1,0 +1,11 @@
+{
+  "name": "aula-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "exercício1.js",
+  "scripts": {
+    "start": "node ./exercício1.js"
+  },
+  "author": "Denise Castro",
+  "license": "ISC"
+}
