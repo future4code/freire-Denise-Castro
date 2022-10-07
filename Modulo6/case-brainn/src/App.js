@@ -1,10 +1,17 @@
 import React from "react";
+import Router from "./routes/Router";
+import GlobalState from "./global/GlobalState"
+import { ContainerApp } from "./styled/GlobalStyle";
+import { GlobalStyle } from "./styled/GlobalStyle";
 
 function App() {
   return (
-    <div>
-     <h1>HELLO WORLD</h1>
-    </div>
+    <GlobalState>
+      <ContainerApp>
+      <GlobalStyle/>
+      <Router/>
+    </ContainerApp>
+  </GlobalState>
   );
 }
 
