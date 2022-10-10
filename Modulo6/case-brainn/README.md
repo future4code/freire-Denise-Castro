@@ -49,14 +49,14 @@
 <br>
 
 ## Dependências e Tecnologias
-:nail_care: Styled-Components
-:blue_book: Axios
-:dart: React Router
+<p>:nail_care: Styled-Components</p>
+<p>:blue_book: Axios</p>
+<p>:dart: React Router<p/>
 
 ## Como rodar o Projeto na sua máquina:
-:one: Git clone
-:two: dentro da pasta do projete execute no terminal: npm install
-:three: execute: npm run start
+<p>:one: Git clone</p>
+<p>:two: dentro da pasta do projete execute no terminal: npm install</p>
+<p>:three: execute: npm run start</p>
 
 ## Visualização
 
