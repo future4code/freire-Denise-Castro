@@ -1,22 +1,21 @@
 import React from "react"
-import ContestInfo from "../../components/ContesInfo/ContestInfo"
-import LotteryName from "../../components//LotteryName/LotteryName"
-import LotterySelect from "../../components/LotterySelect/LotterySelect"
-import Numbers from "../../components/Numbers/Numbers"
+import Concurso from "../../components/Concurso/Concurso"
+import Loteria from "../../components/Loteria/Loteria"
+import SelecionarLoteria from "../../components/SelecionarLoteria/SelecionarLoteria"
+import Numeros from "../../components/Numeros/Numeros"
 import GlobalContext from "../../global/GlobalContext"
-import { PageContainer } from "./styled"
-import { SideContainer } from "./styled"
+import { Lateral, Pagina } from "./styled"
 import { MainContainer } from "./styled"
-import { FooterMessage } from "./styled"
 import { useContext } from "react"
+import { Footer } from "./styled"
 import { useEffect } from "react"
+
 
 const HomePage = () => {
   const { states, setters } = useContext(GlobalContext)
   const { lotteryId, contestData, apiDate } = states
   const { setLotteryId } = setters
 
-  // console.log(lotteryId)
 
   let color
   switch (lotteryId) {
@@ -48,26 +47,26 @@ const HomePage = () => {
   }
 
   return (
-    <PageContainer>
-      <SideContainer select={color}>
+    <Pagina>
+      <Lateral select={color}>
         <div>
-          <LotterySelect onChangeLottery={onChangeLottery} />
+          <SelecionarLoteria onChangeLottery={onChangeLottery} />
         </div>
 
-        <LotteryName/>
+        <Loteria/>
 
-        <ContestInfo date={apiDate} id={contestData.id} lotteryId={lotteryId} />
-      </SideContainer>
+        <Concurso date={apiDate} id={contestData.id} lotteryId={lotteryId} />
+      </Lateral>
 
       <MainContainer>
-        <Numbers />
+        <Numeros />
 
-        {lotteryId !== "7" && <FooterMessage>
+        {lotteryId !== "7" && <Footer>
           Este sorteio é meramente ilustrativo e não possui nenhuma ligação com a CAIXA.
-        </FooterMessage>}
+        </Footer>}
         
       </MainContainer>
-    </PageContainer>
+    </Pagina>
   )
 }
 

@@ -1,17 +1,16 @@
 import styled from "styled-components"
 
-export const PageContainer = styled.div `
+export const Pagina = styled.div `
   display: flex;
   width: 100%;
   height: 100vh;
-  /* min-height: 100vh; */
   @media screen and (min-device-width : 300px) and (max-device-width : 500px) {
     flex-direction: column;
   }
  
 `
 
-export const SideContainer = styled.div `
+export const Lateral = styled.div `
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -37,7 +36,6 @@ export const MainContainer = styled.div `
   align-items: center;
   justify-content: space-between;
   flex-grow: 1;
-  /* /* width: 30vw; */
   height: 100%;
   padding: 64px 100px 64px 0;
   color: black;
@@ -46,7 +44,7 @@ export const MainContainer = styled.div `
   }
 `
 
-export const FooterMessage = styled.div `
+export const Footer = styled.div `
   display: flex;
   align-items: flex-end;
   flex-grow: 1;

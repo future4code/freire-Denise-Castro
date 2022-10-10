@@ -1,10 +1,10 @@
 import React from "react"
 import { useContext } from "react"
 import GlobalContext from "../../global/GlobalContext"
-import {Select} from "./styled"
+import {Selecionar} from "./styled"
 
 
-const LotterySelect = (props) => {
+const SelecionarLoteria = (props) => {
   
   const {states} = useContext(GlobalContext)
   const {lotteries} = states
@@ -15,12 +15,12 @@ const LotterySelect = (props) => {
 
   return(
     <div>
-      <Select name="SelectLottery" id="SelectLottery" onChange={props.onChangeLottery}>
+      <Selecionar name="SelectLottery" id="SelectLottery" onChange={props.onChangeLottery}>
         <option value="7">Escolha a loteria</option>
         {lotteryOption}
-      </Select>
+      </Selecionar>
     </div>
   )
 }
 
-export default LotterySelect
+export default SelecionarLoteria

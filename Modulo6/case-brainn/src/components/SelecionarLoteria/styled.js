@@ -1,6 +1,7 @@
-import styled
- from "styled-components"
-export const Select = styled.select`
+import styled from "styled-components"
+
+
+export const Selecionar = styled.select`
   display: flex;
   height: 36px;
   width: 200px;

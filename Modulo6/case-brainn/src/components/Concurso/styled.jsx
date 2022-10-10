@@ -1,6 +1,8 @@
 import styled from "styled-components"
 
 export const InfoContainer = styled.div`
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+  font-family: 'Montserrat', sans-serif;
   display: flex;
   flex-direction: column;
   gap: 16px;

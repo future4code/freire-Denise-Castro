@@ -1,7 +1,7 @@
 import React from "react"
 import { Info, InfoContainer, Title } from "./styled"
 
-const ContestInfo = (props) => {
+const Concurso = (props) => {
 
   const title = props.lotteryId !== "7" && props.date.length > 0 &&
     "CONCURSO"
@@ -17,4 +17,4 @@ const ContestInfo = (props) => {
   )
 }
 
-export default ContestInfo
+export default Concurso

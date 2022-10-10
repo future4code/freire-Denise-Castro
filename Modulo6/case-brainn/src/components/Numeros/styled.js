@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const NumbersContainer = styled.div `
+export const ContainerNumeros = styled.div `
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -15,7 +15,7 @@ export const NumbersContainer = styled.div `
   }
 `
 
-export const NumberCircle = styled.div `
+export const CirculoDosNumeros = styled.div `
   display: flex;
   justify-content: center;
   align-items: center;

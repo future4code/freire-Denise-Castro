@@ -1,12 +1,11 @@
 import React from "react"
 import GlobalContext from "../../global/GlobalContext"
-import { Logo } from "./styled"
-import { Name } from "./styled"
-import { NameContainer } from "./styled"
+import { ContainerNome, Logo } from "./styled"
+import { Titulo } from "./styled"
 import logo from "../../assets/loteria-logo.png"
 import { useContext } from "react"
 
-const LotteryName = () => {
+const Loteria = () => {
 
   const { states, setters } = useContext(GlobalContext)
   const { lotteries, lotteryId, lotteryName, apiDate } = states
@@ -21,11 +20,11 @@ const LotteryName = () => {
   }
 
   return(
-    <NameContainer>
+    <ContainerNome>
       { lotteryId !== "7" && <Logo src={logo} alt="Logo" /> }
-      <Name>{ lotteryId !== "7" && lotteryName }</Name>
-    </NameContainer>
+      <Titulo>{ lotteryId !== "7" && lotteryName }</Titulo>
+    </ContainerNome>
   )
 }
 
-export default LotteryName
+export default Loteria
