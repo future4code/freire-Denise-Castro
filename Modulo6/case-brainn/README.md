@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+<h1 align="center"> Case Brainn </h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br/>
 
-## Available Scripts
+## Descrição do Projeto
+<p align="justify">O objetivo é construir uma aplicação web front-end que mostre os Resultados das Loterias. </p>
 
-In the project directory, you can run:
+<br/>
 
-### `npm start`
+## Autora
+<p align="justify"> :woman:Denise Castro </p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<br/>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Status do Projeto
+<p align="justify"> :white_check_mark:Concluído </p>
 
-### `npm test`
+<br/>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Objetivo
+<p align="justify">Projeto desenvolvido na reta final do curso de Desenvolvimento Web FullStack da Labenu, nosso principal objetivo é estudar e pôr em prática alguns conhecimentos adquiridos durante o bootcamp como: Javascript; React; Hooks; estilização com Styled-components; GlobalState; React Router, Axios e Responsividade. </p>
 
-### `npm run build`
+<br/>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Desenvolvido com
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<img src="https://img.shields.io/static/v1?label=react&message=framework&color=blue&style=for-the-badge&logo=REACT"/>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<br>
 
-### `npm run eject`
+## Recursos
+- API: https://brainn-api-loterias.herokuapp.com
+- Tipografia (webfont): [Montserrat](https://fonts.google.com/specimen/Montserrat)
+<br></br>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Concepção do Projeto
+:construction_worker: Layout: https://www.figma.com/file/H2qrYBCFMf4didYmxRwTxP/Brainn-Frontend-Challenge
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<br></br>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Requisitos & Funcionalidades
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- A aplicação terá que suportar **6 sorteios**: `Mega-sena`, `Quina`, `Lotofácil`, `Lotomania`, `Timemania` e `Dia de sorte`
+- Todos esses sorteios estarão em um combo-box/select
+- Ao mudar esse combo-box, terá que mudar o **tema do sorteio**, **número do sorteio**, **data do sorteio** e **números sorteados**
+- A aplicação terá que ser responsiva, pelo menos para celulares, conforme layout
+- Criar rotas com React Router DOM
 
-## Learn More
+<br>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Dependências e Tecnologias
+:nail_care: Styled-Components
+:blue_book: Axios
+:dart: React Router
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Como rodar o Projeto na sua máquina:
+:one: Git clone
+:two: dentro da pasta do projete execute no terminal: npm install
+:three: execute: npm run start
 
-### Code Splitting
+## Visualização
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![mega-sena](https://user-images.githubusercontent.com/104698731/194789598-17c55802-b9a3-490d-b0e6-87f304d71cec.gif)
+![quina](https://user-images.githubusercontent.com/104698731/194789721-7e06c729-76b0-47e3-a440-1fe5a93e33b2.gif)
+![dia-de-sorte](https://user-images.githubusercontent.com/104698731/194789855-a210a956-8961-4026-bc3f-a29e98b40439.gif)
+![loto-mania](https://user-images.githubusercontent.com/104698731/194789856-0870abea-067a-401d-b509-3858f33fa188.gif)
+![time-mania](https://user-images.githubusercontent.com/104698731/194789858-bf67bae9-aa5e-4c27-a9c4-94e6499f33e3.gif)
+![181926641-8aa19eb4-aa66-4051-b9c0-32770fa50ece](https://user-images.githubusercontent.com/104698731/194793233-ad5f5f69-9f78-43bc-881f-517ff1d9d6f1.png)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
