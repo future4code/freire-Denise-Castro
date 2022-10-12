@@ -8,7 +8,7 @@ const Router = () => {
         <BrowserRouter>
             <Routes>
                 <Route index element={<HomePage/>}/>
-                <Route path="filmes/:id" element={<FilmesPage/>}/>
+                <Route path="movie/:id" element={<FilmesPage/>}/>
             </Routes>
         </BrowserRouter>
     )
