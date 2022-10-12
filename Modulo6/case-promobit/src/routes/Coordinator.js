@@ -3,6 +3,6 @@ export const goToHome = (navigate) => {
 }
 
 export const goToFilmes = (navigate) => {
-    navigate(`/movie/${id}`)
+    navigate(`/movie`)
     window.scrollTo(0, 0)
 }
