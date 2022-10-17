@@ -1,9 +1,26 @@
 import React from "react"
+import Header from "./components/Header/Header";
 import Router from "./routes/Router";
+import { ContainerApp } from "./styled/GlobalStyle";
+import { GlobalStyle } from "./styled/GlobalStyle";
+
 
 function App() {
   return (
-    <Router/>
+   
+    
+      <ContainerApp>
+        <GlobalStyle/>
+        
+        <Router/>
+        
+        
+      
+      </ContainerApp>
+      
+
+ 
+    
   );
 }
 
