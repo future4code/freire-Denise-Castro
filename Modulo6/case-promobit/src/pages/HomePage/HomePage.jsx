@@ -1,4 +1,5 @@
 import React from "react"
+<<<<<<< HEAD
 import { useEffect } from "react"
 import axios from "axios"
 import { useState } from "react"
@@ -120,6 +121,20 @@ const HomePage = () => {
       <MoviesPagination page={page} changePage={changePage}/>
     </div>
   )
+=======
+import Header from "../../components/Header/Header"
+
+const HomePage = () => {
+    return (
+        <>
+         <Header/>
+         <h1>Home</h1>
+        </>
+       
+
+        
+    )
+>>>>>>> 2f53440191951cc75810a53c9dfa7ebcfb0ccb05
 }
 
 export default HomePage

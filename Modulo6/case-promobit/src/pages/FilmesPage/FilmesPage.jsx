@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../../components/Header/Header";
+<<<<<<< HEAD
 import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react";
@@ -9,6 +10,8 @@ import Cast from "../../components/Cast/Cast"
 import MovieCard from "../../components/MovieCard/MovieCard";
 import { api_key } from "../../constants/apiKey";
 import { goToMovieDetailPage } from "../../routes/Coordinator";
+=======
+>>>>>>> 2f53440191951cc75810a53c9dfa7ebcfb0ccb05
 
 import {
     buildStyles,
@@ -165,6 +168,7 @@ const MovieDetailPage = () => {
   
   
     return (
+<<<<<<< HEAD
       <div>
         <Header />
         <MovieDetailContainer>
@@ -179,6 +183,11 @@ const MovieDetailPage = () => {
             <p>{`Tipo: ${movieGenres}`}</p>
             <p>{`Duração: ${movieDetails.runtime} min`}</p>
           </TopContainer>
+=======
+        <Header/>
+    )
+}
+>>>>>>> 2f53440191951cc75810a53c9dfa7ebcfb0ccb05
 
 
           <Assessment>

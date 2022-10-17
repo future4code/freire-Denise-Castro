@@ -11,7 +11,10 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.1.2",
+<<<<<<< HEAD
     "date-fns": "^2.29.3",
+=======
+>>>>>>> 2f53440191951cc75810a53c9dfa7ebcfb0ccb05
     "react": "^18.2.0",
     "react-circular-progressbar": "^2.1.0",
     "react-dom": "^18.2.0",
