@@ -1,70 +1,75 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 💻Projeto
 
-## Available Scripts
+<img src="https://i.imgur.com/6q2AiRg.png" width="500">
+<br/>
 
-In the project directory, you can run:
+## Descrição do Projeto
+<p align="justify"> O objetivo é criar uma listagem dos filmes mais populares do dia. Ao clicar em um item dessa listagem, outra página com os detalhes do filme escolhido deve ser exibida.
+Para garantir que o usuário encontre o filme que está procurando, essa lista deverá ser paginada. </p>
+<br/>
 
-### `npm start`
+## Autora
+<p align="justify"> :woman:Denise Castro </p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<br/>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Status do Projeto
+<p align="justify"> :white_check_mark:Concluído </p>
 
-### `npm test`
+## Objetivo
+<p align="justify">Projeto desenvolvido na reta final do curso de Desenvolvimento Web FullStack da Labenu, nosso principal objetivo é estudar e pôr em prática alguns conhecimentos adquiridos durante o bootcamp como: Javascript; React; Hooks; estilização com Styled-components; GlobalState; React Router, Axios e Responsividade. </p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br/>
 
-### `npm run build`
+## Desenvolvido com
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img src="https://img.shields.io/static/v1?label=react&message=framework&color=blue&style=for-the-badge&logo=REACT"/>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<br>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Recursos
+- API: [themoviedb](https://developers.themoviedb.org/3/getting-started/introduction)
+- Tipografia (webfont): [Roboto](https://fonts.google.com/specimen/Roboto)
+<br></br>
 
-### `npm run eject`
+## Concepção do Projeto
+:construction_worker: [layout do figma](https://www.figma.com/file/rM7WPqhLY9ObnGzSCeWLxB/Teste-Front-End) sugerido. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Requisitos funcionais
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* [ ] O usuário deve ter acesso a uma listagem dos filmes mais populares do dia
+* [ ] O usuário deve conseguir paginar a lista para encontrar novos filmes
+* [ ] O usuário deve ter acesso a uma outra página com detalhes sobre o filme, ao clicar em um item na listagem
+* [ ] A página com detalhes de um filme deve possuir uma rota própria e estar preparada para ser indexada em mecanismos de pesquisa
+* [ ] O usuário deve conseguir filtrar os filmes listados por gênero, com a possibilidade de usar mais de um gênero
+* [ ] O usuário deve conseguir remover filtros e a listagem deve ser atualizada de acordo com o filtro removido
+* [ ] O usuário deve conseguir voltar para a página de listagem de filmes com os filtros ainda ativos
+<br>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Dependências e Tecnologias
+<p>:nail_care: Styled-Components</p>
+<p>:blue_book: Axios</p>
+<p>:dart: React Router<p/>
+<p> :heavy_check_mark:react-circular-progressbar </p>
+<p>:pencil2:Material-UI</p>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## :file_folder: Caso queira executar a aplicação localmente
 
-## Learn More
+#### Clone do repositório
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```shell
+$ git clone Link Repositório
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Instale as dependêmcias
 
-### Code Splitting
+```shell
+$ npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### Execute a aplicação 
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```shell
+$ npm start
+```
